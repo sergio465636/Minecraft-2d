@@ -1,0 +1,26 @@
+# Игнорируем временные файлы системы
+.DS_Store
+Thumbs.db
+
+# Игнорируем скомпилированные и временные файлы GDevelop
+*.autosave
+*.gdg.autosave
+*.gdg~
+*.json~
+*.log
+.piskel-undo
+
+# Игнорируем папку сборки игры
+build/
+export/
+dist/
+
+# Игнорируем зависимости Node.js (если используется)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Игнорируем файлы, создаваемые IDE (VS Code, JetBrains)
+.vscode/
+.idea/
+*.iml
