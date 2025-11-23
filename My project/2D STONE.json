@@ -11,7 +11,7 @@
     "antialiasingMode": "MSAA",
     "antialisingEnabledOnMobile": false,
     "folderProject": false,
-    "orientation": "landscape",
+    "orientation": "default",
     "packageName": "com.example.gamename",
     "pixelsRounding": false,
     "projectUuid": "ebcc7a4d-86ff-4349-8304-297d63911f34",
@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "adaptWidth",
     "templateSlug": "",
     "version": "1.0.0",
-    "name": "Merry Scissors",
+    "name": "2D STONE",
     "description": "",
     "author": "",
     "windowWidth": 1280,
@@ -49,8 +49,12 @@
       "placement": "bottom-left",
       "showWatermark": true
     },
-    "authorIds": [],
-    "authorUsernames": [],
+    "authorIds": [
+      "AuEXOqycGrbrTf0zTN0AQPzrw7B3"
+    ],
+    "authorUsernames": [
+      "sergio1827"
+    ],
     "categories": [],
     "playableDevices": [],
     "extensionProperties": [],
@@ -70,6 +74,14 @@
         "name": "NewSprite",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -84,8 +96,8 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "_1041_1077_1079_1099_1084_1103_1085_1085_1072_1103_32_1089_1094_1077_1085_1072",
-      "name": "Безымянная сцена",
+      "mangledName": "_50D_32STONE_32menu",
+      "name": "2D STONE menu",
       "r": 209,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -101,16 +113,51 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4789341884535249,
+        "zoomFactor": 0.5117784035210179,
         "windowMask": false,
         "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
-      "objects": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 911,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewTiledSprite",
+          "persistentUuid": "7ccef0dd-28ad-447e-a86e-f04d59fa2df7",
+          "width": 1577,
+          "x": -174,
+          "y": -67,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "NewTiledSprite",
+          "texture": "NewTiledSprite",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        }
+      ],
       "objectsFolderStructure": {
-        "folderName": "__ROOT"
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "NewTiledSprite"
+          }
+        ]
       },
       "events": [],
       "layers": [
@@ -181,16 +228,8 @@
       ],
       "behaviorsSharedData": [
         {
-          "name": "Animation",
-          "type": "AnimatableCapability::AnimatableBehavior"
-        },
-        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
-        },
-        {
-          "name": "Flippable",
-          "type": "FlippableCapability::FlippableBehavior"
         },
         {
           "name": "Opacity",
@@ -199,10 +238,6 @@
         {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
-        },
-        {
-          "name": "Scale",
-          "type": "ScalableCapability::ScalableBehavior"
         }
       ]
     }
